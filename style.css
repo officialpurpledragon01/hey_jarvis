@@ -1,0 +1,105 @@
+body{
+  background-color: rgb(47, 52, 190);
+  color: azure;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: space-between; */
+  margin: 0 50px;
+  height: 100vh;
+  align-items: center;
+  scrollbar-width: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.dashboard{
+  text-align: center;
+  margin: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.status{
+  position: relative;
+  top: 9px;
+  font-size: 13px;
+  color: red;
+}
+.result{
+  text-align: left;
+  width: 100%;
+  max-height: calc(100vh - 180px);
+  padding: .5rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+
+  text-wrap: no-wrap;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.result div {
+  word-wrap: break-word;
+  margin: 10px; 
+  padding: 10px; 
+  border-radius: 10px; 
+  max-width: 70%;
+}
+
+.result > div:nth-child(even){
+  border: 1px rgba(224, 235, 12, 0.87) solid;
+  align-self: flex-start; 
+}
+.result > div:nth-child(odd){
+  border: 1px rgba(255, 255, 255, 0.763) solid;
+  align-self: flex-end; 
+}
+
+#me{ 
+  border: 1px rgba(255, 255, 255, 0.763) solid;
+  align-self: flex-end; 
+}
+#jarvis{
+  border: 1px rgba(224, 235, 12, 0.87) solid;
+  align-self: flex-start; 
+}
+
+.btns{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 5px 60px;
+  position: fixed;
+  /* height: 100px; */
+  bottom: 15px;
+  left: 0;
+  right: 0;
+
+  background-color:  rgb(47, 52, 190);
+}
+
+
+button{
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(3, 110, 3);
+  font-weight: 600;
+  border: solid white 2px;
+  border-radius: 7px;
+  padding: 8px 17px;
+}
+#stopBtn{
+  background-color: brown;
+}
