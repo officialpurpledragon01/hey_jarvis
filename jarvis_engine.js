@@ -80,6 +80,7 @@ function speak(text) {
   }
 
   const utter = new SpeechSynthesisUtterance(text);
+   utter.rate = 1.41;
   
   // 2. Pick a voice explicitly (helps Edge/Chrome find the engine)
   const voices = synth.getVoices();
